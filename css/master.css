@@ -143,6 +143,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .post-x {
+    width: 30px;
+  }
   .side-bar {
     width: 62px;
     padding: 10px;
@@ -300,7 +303,24 @@ ul {
   border: 2px solid var(--bg-alt);
   transform: scale(1.1);
 }
+
 @media (max-width: 767px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .settings-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .plans-page {
+    display: flex;
+    flex-direction: column;
+  }
   .welcome .intro {
     padding-bottom: 30px;
   }
@@ -397,6 +417,7 @@ ul {
   border: 1px solid var(--primary-color);
   transform: scale(1.01);
 }
+
 .social {
   border: 1px solid transparent;
   transition: ease 0.3s;
