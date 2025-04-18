@@ -37,7 +37,7 @@ This dashboard is **for fun and personal experimentation**. If it breaks, it’s
 
 ## 🔗 Live Site
 
-
+ [Visit the Live Dashboard](https://eyaaddx.github.io/Flowboard/)
 
 ---
 
