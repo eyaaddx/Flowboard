@@ -43,4 +43,6 @@ This dashboard is **for fun and personal experimentation**. If it breaks, it’s
 
 > *"This dashboard has no business being this stylish."* — Me, after finishing it at 3AM.
 
+---
+inspired from DashdarkX  and osmaElzero and used few components from uvirse
 
