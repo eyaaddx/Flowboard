@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework-eyad.css" />
+
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="imgs/fav-icon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="scrollToTopBtn" title="Go to top">^</button>
+    <div class="page flex">
+      <!-- side bar -->
+      <div class="side-bar p-relative p-20">
+        <h2 class="p-relative txt-c mt-0">Flow</h2>
+        <div class="sb-1">
+          <ul>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="index.html"
+              >
+                <i class="fa-solid fa-chart-bar fa-fw"></i>
+                <span class="hide-mobile">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span class="hide-mobile">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="active flex align-center fs-15 c-black rad-6 p-10"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i>
+                <span class="hide-mobile">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-list-check fa-fw"></i>
+                <span class="hide-mobile">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-user-graduate fa-fw"></i>
+                <span class="hide-mobile">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-users fa-fw"></i>
+                <span class="hide-mobile">Friends</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="files.html"
+              >
+                <i class="fa-solid fa-copy fa-fw"></i>
+                <span class="hide-mobile">Files</span>
+              </a>
+            </li>
+            <li class="last-sb">
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-money-check-dollar fa-fw"></i>
+                <span class="hide-mobile">Plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sb-2 p">
+          <ul>
+            <li>
+              <a
+                class="user-signed active flex align-center fs-15 c-black rad-6 p-10"
+                href="profile.html"
+              >
+                <img src="imgs/eyad.png" alt="" />
+                <span class="user-name fw-bold">Eyad Mohamed </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end side bar -->
+
+      <!-- content -->
+
+      <div class="content w-full">
+        <!-- head -->
+        <div class="head p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons flex align-center">
+            <span class="notification p-relative"
+              ><i class="fa-solid fa-bell fa-lg"></i
+            ></span>
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <!--  end head -->
+        <h1 class="page-heading tracking-in-expand p-relative">Profile</h1>
+        <!-- user-info -->
+        <div class="user-info m-20 flex align-center bg-accent rad-10">
+          <div class="info txt-c">
+            <img src="imgs/eyad.png" alt="" />
+            <h3 class="mt-10 mb-10">Eyad Mohamed</h3>
+            <p class="mt-10 txt-accent fs-15">Level 5</p>
+            <div>
+              <div class="progress-loader mt-10 mb-10">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </div>
+            <p class="mt-10 txt-accent fs-13">110 Positive Review</p>
+          </div>
+          <div class="info-box">
+            <div class="box flex align-center">
+              <p class="mt-0 mb-10 fs-15 txt-accent w-full">
+                General Information
+              </p>
+              <div class="fs-14">
+                <span class="txt-accent">Full Name:</span>
+                <span class="c-white">Eyad Mohamed</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Gender: </span>
+                <span class="c-white">Male</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Country: </span>
+                <span class="c-white">Egypt</span>
+              </div>
+            </div>
+            <div class="box flex align-center">
+              <p class="mt-0 mb-10 fs-15 txt-accent w-full">
+                Personal Information
+              </p>
+              <div class="fs-14">
+                <span class="txt-accent">Email: </span>
+                <span class="c-white">eyadkmal81@gmail.com</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Phone: </span>
+                <span class="c-white">01121689434</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Date Of Birth: </span>
+                <span class="c-white">20/01/2001</span>
+              </div>
+            </div>
+            <div class="box flex align-center">
+              <p class="mt-0 mb-10 fs-15 txt-accent w-full">Job Information</p>
+              <div class="fs-14">
+                <span class="txt-accent">Title: </span>
+                <span class="c-white">Front-end Developer</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Programming Language: </span>
+                <span class="c-white">Java Script</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Years Of Experience: </span>
+                <span class="c-white">2</span>
+              </div>
+            </div>
+            <div class="box-last flex align-center">
+              <p class="mt-0 mb-10 fs-15 txt-accent w-full">
+                Billing Information
+              </p>
+              <div class="fs-14">
+                <span class="txt-accent">Payment Method: </span>
+                <span class="c-white"> Paypal</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Email: </span>
+                <span class="c-white">email@website.com</span>
+              </div>
+              <div class="fs-14">
+                <span class="txt-accent">Subscription: </span>
+                <span class="c-white">Monthly</span>
+              </div>
+            </div>
+          </div>
+          <!-- <p class="mt-0 mb-20 mr-15 fs-14 txt-accent">Gender:</p>
+              <span class="c-white">Male</span>
+              <p class="mt-0 mb-20 fs-14 txt-accent">Country:</p>
+              <span class="c-white"> Egypt </span> -->
+        </div>
+        <!-- end user-info -->
+        <!-- My Skills -->
+        <div class="other-data m-20 flex gap-20">
+          <div class="my-skills p-relative bg-accent rad-10 mt-20 p-20">
+            <h2 class="mt-0 mb-10">My Skills</h2>
+            <p class="mt-0 fs-15 txt-accent">Complete Skills List</p>
+            <div class="skills-box p-relative">
+              <div class="box flex align-center gap-10">
+                <div class="label fs-14 btn-shape w-fit bg-primary">HTML</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">CSS</div>
+              </div>
+              <div class="box flex align-center gap-10">
+                <div class="label fs-14 btn-shape w-fit bg-primary">
+                  JavaScript
+                </div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">
+                  TypeScript
+                </div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">SASS</div>
+              </div>
+              <div class="box flex align-center gap-10">
+                <div class="label fs-14 btn-shape w-fit bg-primary">Pugjs</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">Stylus</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">HAML</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">html</div>
+              </div>
+              <div class="box flex align-center gap-10">
+                <div class="label fs-14 btn-shape w-fit bg-primary">Vuejs</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">
+                  Reactjs
+                </div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">Jest</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">UX/UI</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">html</div>
+              </div>
+              <div class="box flex align-center gap-10">
+                <div class="label fs-14 btn-shape w-fit bg-primary">Figma</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">
+                  Data Analysis
+                </div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">SQL</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">boomer</div>
+              </div>
+              <div class="box flex align-center gap-10">
+                <div class="label fs-14 btn-shape w-fit bg-primary">Sleep</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">
+                  not to sleep
+                </div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">peace</div>
+              </div>
+              <div class="box flex align-center gap-10">
+                <div class="label fs-14 btn-shape w-fit bg-primary">ignore</div>
+                <div class="label fs-14 btn-shape w-fit bg-primary">peace</div>
+              </div>
+            </div>
+          </div>
+          <div class="latest-activities p-relative bg-accent rad-10 mt-20 p-20">
+            <h2 class="mt-0 mb-10">Latest Activities</h2>
+            <p class="mt-0 mb-20 fs-15 txt-accent">
+              Latest Activities Done By $(user)
+            </p>
+            <div class="activity fs-15 flex align-center txt-c-mobile">
+              <img src="imgs/activity-03.png" alt="" />
+              <div class="info">
+                <span class="block mb-10">Verfied Badge</span>
+                <span class="txt-accent">Earned the blue mark on Linkedin</span>
+              </div>
+              <div class="date">
+                <span class="block mb-10">12:55 pm</span>
+                <span class="txt-accent">Yesterday</span>
+              </div>
+            </div>
+            <div class="activity fs-15 flex align-center txt-c-mobile">
+              <img src="imgs/udemy-3.svg" alt="" />
+              <div class="info">
+                <span class="block mb-10">Udemy</span>
+                <span class="txt-accent">Got The JavaScript Certificate</span>
+              </div>
+              <div class="date">
+                <span class="block mb-10">01:22 pm</span>
+                <span class="txt-accent">01/06/2025</span>
+              </div>
+            </div>
+            <div class="activity fs-15 flex align-center txt-c-mobile">
+              <img src="imgs/linkedin-icon-2.svg" alt="" />
+              <div class="info">
+                <span class="block mb-10">Linked-in</span>
+                <span class="txt-accent">Unlocked The 10 Skills Badge</span>
+              </div>
+              <div class="date">
+                <span class="block mb-10">03:31 am</span>
+                <span class="txt-accent">02/08/2025</span>
+              </div>
+            </div>
+            <div class="activity fs-15 flex align-center txt-c-mobile">
+              <img src="imgs/icons8-leetcode-96.png" alt="" />
+              <div class="info">
+                <span class="block mb-10">LeetCode</span>
+                <span class="txt-accent">Earned the blue mark on Linkedin</span>
+              </div>
+              <div class="date">
+                <span class="block mb-10">12:55 pm</span>
+                <span class="txt-accent">Yesterday</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  end My Skills -->
+      </div>
+      <!-- end content -->
+    </div>
+    <script src="js/scrollToTop.js"></script>
+  </body>
+</html>

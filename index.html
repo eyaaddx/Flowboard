@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework-eyad.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="imgs/fav-icon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="scrollToTopBtn" title="Go to top">^</button>
+
+    <div class="page flex">
+      <!-- side bar  -->
+      <div class="side-bar p-relative p-20">
+        <h2 class="p-relative txt-c mt-0">Flow</h2>
+        <div class="sb-1">
+          <ul>
+            <li>
+              <a
+                class="active flex align-center fs-15 c-black rad-6 p-10"
+                href="index.html"
+              >
+                <i class="fa-solid fa-chart-bar fa-fw"></i>
+                <span class="hide-mobile">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span class="hide-mobile">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i>
+                <span class="hide-mobile">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-list-check fa-fw"></i>
+                <span class="hide-mobile">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-user-graduate fa-fw"></i>
+                <span class="hide-mobile">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-users fa-fw"></i>
+                <span class="hide-mobile">Friends</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="files.html"
+              >
+                <i class="fa-solid fa-copy fa-fw"></i>
+                <span class="hide-mobile">Files</span>
+              </a>
+            </li>
+            <li class="last-sb">
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-money-check-dollar fa-fw"></i>
+                <span class="hide-mobile">Plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sb-2 p">
+          <ul>
+            <li>
+              <a
+                class="user-signed active flex align-center fs-15 c-black rad-6 p-10"
+                href="profile.html"
+              >
+                <img src="imgs/eyad.png" alt="" />
+                <span class="user-name fw-bold">Eyad Mohamed </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end side bar  -->
+
+      <!-- content  -->
+
+      <div class="content w-full">
+        <!-- head -->
+        <div class="head p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons flex align-center">
+            <span class="notification p-relative"
+              ><i class="fa-solid fa-bell fa-lg"></i
+            ></span>
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <!--  end head -->
+        <h1 class="  page-heading tracking-in-expand p-relative">Dashboard</h1>
+        <div class="wrapper grid gap-20">
+          <!-- welcome widget -->
+          <div class="welcome bg-accent rad-10 txt-c-mobile block-mobile">
+            <div class="intro flex space-between p-20 ">
+              <div>
+                <h2 class="m-0">Welcome</h2>
+                <a href="profile.html"><p class="txt-accent mt-5">Eyad</p></a>
+              </div>
+              <img class="hide-mobile" src="imgs/welcome.png" alt="" />
+            </div>
+            <a href="profile.html"><img class="avatar" src="imgs/eyad.png" alt=""></a>
+            <div class="body txt-c p-20 flex space-between mt-20 mb-20 block-mobile">
+              <div><a class="c-white" href="profile.html">Eyad mohamed</a> <span class="block txt-accent fs-15 mt-10 ">Front-End Developer</span></div>
+              <div> 555<span class="block txt-accent fs-15 mt-10 ">Projects</span></div>
+              <div>$9600 <span class="block txt-accent fs-15 mt-10 ">Total Earned</span></div>
+            </div>
+            <a href="profile.html" class=" visit block w-fit fs-14 rad-6 btn-shape bg-primary c-white ">Profile</a>
+          </div>
+          <!-- end welcome widget -->
+          <!--  quick draft widget -->
+          <div class="quick-draft bg-accent rad-10 p-20">
+            <h2 class="mt-0 mb-10">Quick Draft</h2>
+            <p class="txt-accent mt-0 mb-20 fs-15 ">Write Any Thing U Think about </p>
+            <form action="">
+              <input type="text" class=" title p-10 mb-20 w-full block b-none" placeholder="Title">
+              <textarea  class=" p-10 mb-20 w-full block b-none"" name="" placeholder="What's going on your mind ?" ></textarea>
+              <input class=" save block b-none w-fit fs-14 rad-6 btn-shape bg-primary c-white" type="submit" value="save">
+            </form>
+
+          </div>
+          <!-- end quick draft widget -->
+          <!-- Yearly Targets -->
+           <div class="targets bg-accent rad-10 p-20">
+            <h2 class="mt-0 mb-10">Yearly Targets</h2>
+            <p class="mt-0 mb-20 fs-15 txt-accent">Targets Of The Year </p>
+            <div class="target-item money mb-20 center-flex ">
+              <div class="icon center-flex rad-10">
+                <i class="fa-solid fa-dollar-sign fa-lg "></i>
+              </div>
+              <div class="details">
+                <span class=" fs-14 txt-accent ">Money</span>
+                <span class="mb-10 mt-5 fw-bold block">$10K</span>
+                <div class="progress  p-relative">
+                  <span class="money" style="width: 70%;">
+                    <span class="">70%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="target-item projects mb-20 center-flex ">
+              <div class="icon center-flex rad-10">
+                <i class="fa-solid fa-file-code fa-lg "></i>
+              </div>
+              <div class="details">
+                <span class=" fs-14 txt-accent ">Projects</span>
+                <span class="mb-10 mt-5 fw-bold block">555</span>
+                <div class="progress  p-relative">
+                  <span class="projects" style="width: 55%;">
+                    <span class="">55%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="target-item clients mb-20 center-flex ">
+              <div class="icon center-flex rad-10">
+                <i class="fa-solid fa-users fa-lg "></i>
+              </div>
+              <div class="details">
+                <span class=" fs-14 txt-accent ">Clients</span>
+                <span class="mb-10 mt-5 fw-bold block">22</span>
+                <div class="progress  p-relative">
+                  <span class="clients" style="width: 22%;">
+                    <span class="">22%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+           </div>
+          <!-- end Yearly Targets -->
+           <!-- tickets -->
+            <div class="tickets bg-accent rad-10 p-20">
+              <h2 class="mt-0 mb-10">Tickets Statistics</h2>
+              <p class="mt-0 mb-20 fs-15 txt-accent">Everything About Support Tickets </p>
+              <div class="flex f-wrap txt-c gap-20  ">
+                <div class="box fs-13 p-20 rad-10 txt-accent ">
+                  <i class="fa-solid fa-list-ul fa-2x c-orange"></i>
+                  <span class="block mb-5 fs-25 fw-bold c-white">2500</span>
+                  <span>Total</span>
+                </div>
+                <div class="box fs-13 p-20 rad-10 txt-accent ">
+                  <i class="fa-solid fa-spinner fa-2x c-blue"></i>
+                  <span class="block mb-5 fs-25 fw-bold c-white">200</span>
+                  <span>Pending</span>
+                </div>
+                <div class="box fs-13 p-20 rad-10 txt-accent ">
+                  <i class="fa-solid fa-check-double fa-2x c-orange"></i>
+                  <span class="block mb-5 fs-25 fw-bold c-white">555</span>
+                  <span>Finished</span>
+                </div>
+                <div class="box fs-13 p-20 rad-10 txt-accent ">
+                  <i class="fa-regular fa-rectangle-xmark fa-2x c-red"></i>
+                  <span class="block mb-5 fs-25 fw-bold c-white">50</span>
+                  <span>Rejected</span>
+                </div>
+              </div>
+            </div>
+           <!-- end tickets -->
+
+           <!--  Suspicious Activity -->
+            <div class="activities  bg-accent rad-10 p-20  txt-c-mobile">
+              <h2 class="mt-0 mb-20"> Suspicious Activity </h2>
+              <div class="activity p-relative space-between block-mobile flex align-center gap-20">
+                <img class="rad-10" src="imgs/printer.png" alt="">
+                <div class="info">
+                  <h3>Printer Started Printing by Itself</h3>
+                  <p class="txt-accent fs-14 m-0">No one sent a file. No one made eye contact.</p>
+                </div>
+                <div class="label fs-13 btn-shape w-fit bg-primary">3 Days Ago</div>
+              </div>
+              <div class="activity block-mobile flex  align-center gap-20">
+                <img class="rad-10" src="imgs/internet explorer.png" alt="">
+                <div class="info">
+                  <h3>Someone Used Internet Explorer</h3>
+                  <p class="txt-accent fs-14 m-0">We're investigating. Security has been alerted.</p>
+                </div>
+                <div class="label fs-13 btn-shape bg-primary">5 Days Ago</div>
+              </div>
+              <div class="activity block-mobile flex  align-center gap-20">
+                <img class="rad-10" src="imgs/404.png" alt="">
+                <div class="info">
+                  <h3>404 Bug Found in Kitchen</h3>
+                  <p class="txt-accent fs-14 m-0">It was just a raisin. Crisis averted.</p>
+                </div>
+                <div class="label fs-13 btn-shape bg-primary">8 Days Ago</div>
+              </div>
+              <div class="activity block-mobile flex align-center gap-20">
+                <img class="rad-10" src="imgs/employee.png" alt="">
+                <div class="info">
+                  <h3>Employee Logged In at 5 AM</h3>
+                  <p class="txt-accent fs-14 m-0">Either very dedicated… or sleepwalking.</p>
+                </div>
+                <div class="label  btn-shape bg-primary">10 Days Ago</div>
+              </div>
+            </div>
+           <!-- END  Suspicious Activity -->
+           <!--  Things We Probably Forgot -->
+           <div class="activities  bg-accent rad-10 p-20  txt-c-mobile">
+            <h2 class="mt-0 mb-20"> Things We Probably Forgot </h2>
+            <div class="activity block-mobile flex align-center gap-20">
+              <div class="info">
+                <h3>Master Front-end.</h3>
+                <p class="txt-accent fs-25 m-0">v0 makes the layout, Cursor fixes your regrets.</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete "></i>
+            </div>
+            <div class="activity block-mobile flex align-center gap-20 done">
+              <div class="info">
+                <h3>Stop Using “Lorem Ipsum”.</h3>
+                <p class="txt-accent fs-25 m-0">The client thinks it's a spell.</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete "></i>
+            </div>
+            <div class="activity block-mobile flex align-center gap-20">
+              <div class="info">
+                <h3>Feed the Server Hamster</h3>
+                <p class="txt-accent fs-25 m-0">It powers the whole backend, remember?.</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete "></i>
+            </div>
+            <div class="activity block-mobile flex align-center gap-20">
+              <div class="info">
+                <h3>Fix That One Bug.</h3>
+                <p class="txt-accent fs-25 m-0">You know… the one we've been ignoring for 3 sprints.</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete "></i>
+            </div>
+            <div class="activity block-mobile flex align-center gap-20">
+              <div class="info">
+                <h3>Actually Finish This List.</h3>
+                <p class="txt-accent fs-25 m-0">Nah, maybe tomorrow.</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete "></i>
+            </div>
+          </div>
+           <!-- END  Things We Probably Forgot -->
+           <!-- Top Search Items -->
+            <div class="search-items bg-accent rad-10 p-20 txt-c-mobile">
+              <h2 class="mt-0 mb-20"> Trending Now </h2>
+              <div class="items-head flex space-between mb-10 txt-accent ">
+                <div>Keyword</div>
+                <div>Search Count</div>
+              </div>
+              <div class="items flex space-between pt-15 pb-10">
+                <span>“How to center a div”	</span>
+                <span class="btn-shape bg-primary fs-13">999+</span>
+              </div>
+              <div class="items flex space-between pt-15 pb-10">
+                <span>AI that does my job</span>
+                <span class="btn-shape bg-primary fs-13">870</span>
+              </div>
+              <div class="items flex space-between pt-15 pb-10">
+                <span>v0 button not working</span>
+                <span class="btn-shape bg-primary fs-13">600</span>
+              </div>
+              <div class="items flex space-between pt-15 pb-10">
+                <span>JavaScript regrets	</span>
+                <span class="btn-shape bg-primary fs-13">404</span>
+              </div>
+              <div class="items flex space-between pt-15 pb-10">
+                <span>Dark mode toggle		</span>
+                <span class="btn-shape bg-primary fs-13">345</span>
+              </div>
+                <div class="items flex space-between pt-15 pb-10">
+                  <span>CSS sorcery tricks		</span>
+                  <span class="btn-shape bg-primary fs-13">145</span>
+                </div>
+              <div class="items flex space-between pt-15 pb-10">
+                <a class="c-white" href="https://playvalorant.com/en-us/">Riot Gun Buddy</a>
+                <span class="btn-shape bg-primary fs-13">100</span>
+              </div>
+            </div>
+           <!-- end Top Search Items -->
+            <!-- latest uploads -->
+            <div class="latest-uploads bg-accent rad-10 p-20 ">
+              <h2 class="mt-0 mb-20">Latest uploads</h2>
+              <ul class="m-0">
+                <li class="info between-flex mb-10 pb-10">
+                  <div class="flex align-center">
+                    <img class="mr-10 " src="imgs/pdf.svg" alt="">
+                    <div>
+                      <span class="block">final_final_v9_actually_final.pdf	</span>
+                      <span class="fs-15 txt-accent">Sarah from Design	</span>
+                    </div>
+                  </div>
+                  <div class="btn-shape bg-primary fs-13">
+                    3.2 MB
+                  </div>
+                </li>
+                <li class="info between-flex mb-10 pb-10">
+                  <div class="flex align-center">
+                    <img class="mr-10 " src="imgs/png.svg" alt="">
+                    <div>
+                      <span class="block">Figma_export_broken_again.png</span>
+                      <span class="fs-15 txt-accent"> Designer	</span>
+                    </div>
+                  </div>
+                  <div class="btn-shape bg-primary fs-13">
+                    680 KB
+                  </div>
+                </li>
+                <li class="info between-flex mb-10 pb-10">
+                  <div class="flex align-center">
+                    <img class="mr-10 " src="imgs/zip.svg" alt="">
+                    <div>
+                      <span class="block">	tailwind_utils_we_dont_understand.zip	</span>
+                      <span class="fs-15 txt-accent">	Team Chat Dump</span>
+                    </div>
+                  </div>
+                  <div class="btn-shape bg-primary fs-13">
+                    7.3 MB
+
+                  </div>
+                </li>
+                <li class="info between-flex mb-10 pb-10">
+                  <div class="flex align-center">
+                    <img class="mr-10 " src="imgs/sql.svg" alt="">
+                    <div>
+                      <span class="block">data_that_broke_the_UI.SQL	</span>
+                      <span class="fs-15 txt-accent">API Bot	</span>
+                    </div>
+                  </div>
+                  <div class="btn-shape bg-primary fs-13">
+                    2.4 MB
+                  </div>
+                </li>
+                <li class="info between-flex mb-10 pb-10">
+                  <div class="flex align-center">
+                    <img class="mr-10 " src="imgs/html-svgrepo-com.svg" alt="">
+                    <div>
+                      <span class="block">index_with_inline_styles_forgive_me.html</span>
+                      <span class="fs-15 txt-accent">Speedy Fixer		</span>
+                    </div>
+                  </div>
+                  <div class="btn-shape bg-primary fs-13">
+                    3 KB
+
+                  </div>
+                </li>
+                <li class="info between-flex mb-10 pb-10">
+                  <div class="flex align-center">
+                    <img class="mr-10 " src="imgs/log-icon.svg" alt="">
+                    <div>
+                      <span class="block">error_log_says_undefined_again.log</span>
+                      <span class="fs-15 txt-accent">Console Whisperer		</span>
+                    </div>
+                  </div>
+                  <div class="btn-shape bg-primary fs-13">
+                    67 KB
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- end latest uploads -->
+             <!-- current projects -->
+             <div class="project-progress bg-accent rad-10 p-20 p-relative ">
+              <h2 class="mt-0 mb-20">Current  Journey</h2>
+              <ul class="m-0 p-relative">
+                <li class="mt-25 flex align-center done ">Design Brief Accepted</li>
+                <li class="mt-25 flex align-center done ">Codebase Initiated</li>
+                <li class="mt-25 flex align-center done ">UI Polishing in Progress</li>
+                <li class="mt-25 flex align-center done ">Cast Animations & Styles</li>
+                <li class="mt-25 flex align-center current ">Bug-Free Testing aka "Grinding to immo"</li>
+                <li class="mt-25 flex align-center  ">Unleash to Production Realm</li>
+                <li class="mt-25 flex align-center  ">Testing Under Pressure</li>
+                <li class="mt-25 flex align-center  ">Launch & Payment Received</li>
+              </ul>
+             </div>
+             <!-- end current projects -->
+              <!-- reminders -->
+              <div class=" to-do bg-accent rad-10 p-20 p-relative ">
+                <h2 class="mt-0 mb-20 ">To-Do list</h2>
+              
+                <div class="task flex align-center  mt-20">
+                  <i class="fa-regular fa-circle fa-lg block mr-15"></i>
+                  <div class="info">
+                    <span class="block pb-5">Added one more animation. My site is now a rave.
+                    </span>
+                    <span class="fs-13 txt-accent ">01/05/2025 - 12:00am</span>
+                  </div>
+                </div>
+                <div class="task flex align-center  mt-20">
+                  <i class="fa-regular fa-circle fa-lg block mr-15"></i>
+                  <div class="info">
+                    <span class="block pb-5">Pushed code to GitHub like I actually know what I'm doing.</span>
+                    <span class="fs-13 txt-accent ">03/08/2025 - 1:00am</span>
+                  </div>
+                </div>
+                <div class="task  flex align-center  mt-20">
+                  <i class="fa-regular fa-circle fa-lg block mr-15"></i>
+                  <div class="info">
+                    <span class="block pb-5">Googled “how to center with flex” for the 40th time.</span>
+                    <span class="fs-13 txt-accent ">15/6/2025 - 06:00pm</span>
+                  </div>
+                </div>
+                <div class="task done flex align-center  mt-20">
+                  <i class="fa-regular fa-circle-check fa-lg block mr-15"></i>
+                  <div class="info">
+                    <span class="block pb-5">Fixed one bug, created three new ones.</span>
+                    <span class="fs-13 txt-accent ">1/6/2025 - 11:55pm</span>
+                  </div>
+                </div>
+                <div class="task done flex align-center  mt-20">
+                  <i class="fa-regular fa-circle-check fa-lg block mr-15"></i>
+                  <div class="info">
+                    <span class="block pb-5">Styled a checkbox. Should get an award.</span>
+                    <span class="fs-13 txt-accent ">25/4/2025 - 07:00am</span>
+                  </div>
+                </div>
+                <div class="task done flex align-center  mt-20">
+                  <i class="fa-regular fa-circle-check fa-lg block mr-15"></i>
+                  <div class="info">
+                    <span class="block pb-5">Renamed a file. Project instantly broke.</span>
+                    <span class="fs-13 txt-accent ">01/01/2025 - 12:30am</span>
+                  </div>
+                </div>
+                <div  class=" add-task btn-shape w-fit bg-primary fs-13"> Add Task</div>
+              </div>
+              <!-- end reminders -->
+            <!-- latest post -->
+            <div class=" to-do bg-accent rad-10 p-20 p-relative ">
+              <h2 class="mt-0 mb-20 ">Status</h2>
+              <div class="post-x b-none ">
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="ar" dir="rtl">لما توصل ما تصعبهاش على غيرك ! <a href="https://t.co/7V3CuJAYrJ">pic.twitter.com/7V3CuJAYrJ</a></p>&mdash; toxic thoughts (@_3adawy_) <a href="https://twitter.com/_3adawy_/status/1910064619164737821?ref_src=twsrc%5Etfw">April 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+            <!-- end  latest post -->
+             <!-- social media stats  -->
+             <div class=" social bg-accent rad-10 p-20 p-relative ">
+              <h2 class="mt-0 mb-20 ">Social Media Stats</h2>
+              <div class="box yt  between-flex  p-15 p-relative  ">
+                <i class="fa-brands fa-youtube c-red fa-2x fa-beat h-full c-white center-flex"></i>
+                <div class="info  mt-10 be">
+                  <span class=" fs-15 cre fw-bold">iyadMohamed_</span>
+                  <p class="txt-accent mt-0 fs-13">25K views | 62 subscribers
+                  </p>
+                </div>
+                <a class="btn-shape fs-14 c-white w-fit bg-red" href="https://www.youtube.com/@iyadMohamed_" target="_blank" rel="noopener noreferrer">SUBSCRIBE</a>
+              </div>
+              <div class="box linkedin   between-flex  p-15 p-relative  ">
+                <i class="fa-brands fa-linkedin  fa-2x fa-beat h-full c-white center-flex"></i>
+                <div class="info  mt-10 be">
+                  <span class=" fs-15 cre fw-bold">Eyad Mohamed</span>
+                  <p class="txt-accent mt-0 fs-13">1k Followers</p>
+                </div>
+                <a class="btn-shape fs-14 c-white w-fit bg-blue" href="https://www.linkedin.com/in/eyadmohamed/" target="_blank" rel="noopener noreferrer">Connect</a>
+              </div>
+              <div class="box facebook   between-flex  p-15 p-relative  ">
+                <i class="fa-brands fa-facebook  fa-2x fa-beat h-full c- center-flex"></i>
+                <div class="info  mt-10 be">
+                  <span class=" fs-15 cre fw-bold">iyaddmohamed</span>
+                  <p class="txt-accent mt-0 fs-13">1k Friends</p>
+                </div>
+                <a class="btn-shape fs-14 c-blue bg-white w-fit bg-blue" href="https://www.facebook.com/iyaddmohamed" target="_blank" rel="noopener noreferrer">Follow</a>
+              </div>
+              <div class="box twitter   between-flex  p-15 p-relative  ">
+                <i class="fa-brands fa-x c-black fa-2x fa-beat h-full c- center-flex"></i>
+                <div class="info  mt-10 be">
+                  <span class=" fs-15 cre fw-bold">iyaddmohamed</span>
+                  <p class="txt-accent mt-0 fs-13">1k Followers</p>
+                </div>
+                <a class="btn-shape fs-14 c-white bg-black" href="https://x.com/iyaddmohamed" target="_blank" rel="noopener noreferrer">Follow</a>
+              </div>
+              <div class="box github  between-flex  p-15 p-relative  ">
+                <i class="fa-brands fa-github  fa-2x fa-beat h-full c- center-flex"></i>
+                <div class="info  mt-10 be">
+                  <span class=" fs-15 cre fw-bold">eyaaddx</span>
+                  <p class="txt-accent mt-0 fs-13"></p>
+                </div>
+                <a class="btn-shape fs-14 bg-white c-black " href="https://github.com/eyaaddx" target="_blank" rel="noopener noreferrer">Follow</a>
+              </div>
+              <div class="box instagram  between-flex  p-15 p-relative  ">
+                <i class="fa-brands fa-instagram  fa-2x fa-beat h-full c- center-flex"></i>
+                <div class="info  mt-10 be">
+                  <span class=" fs-15 cre fw-bold">iyaddmohamed_</span>
+                  <p class="txt-accent mt-0 fs-13">2K followers</p>
+                </div>
+                <a class="btn-shape fs-14 bg-white c-black " href="https://www.instagram.com/iyaddmohamed_" target="_blank" rel="noopener noreferrer">Follow</a>
+              </div>
+             <!--  end social media stats  -->
+              </div>
+             <!--end social media stats  -->
+           
+        <!--  end content  -->
+        </div>
+           <!-- projects table  -->
+           <div class=" p-table bg-accent rad-10 m-20 p-20 p-relative ">
+            <h2 class="mt-0 mb-20 "> Projects Lab</h2>
+            <div class="responsive-table">
+              <table class="fs-15 w-full">
+                <thead>
+                  <tr>
+                    <td>Project Title</td>
+                    <td>Last Seen</td>
+                    <td>For Who</td>
+                    <td>Burnt Budget</td>
+                    <td>Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Landing Page of Doom</td>
+                    <td> 29/03/2025</td>
+                    <td>Startup Bro™</td>
+                    <td>$300	</td>
+                    <td>
+                      <span class="btn-shape fs-13 fw-bold bg-green w-fit  c-white">Pushed to Prod </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Center This Div, Please</td>
+                    <td> 29/05/2025</td>
+                    <td>	Client That Cries</td>
+                    <td>	$120	</td>
+                    <td>
+                      <span class="btn-shape fs-13 fw-bold bg-orange w-fit  c-white">Pending Alignment  </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Button Hover Odyssey	</td>
+                    <td> 14/06/2025</td>
+                    <td>	UI Perfectionist</td>
+                    <td>	$250		</td>
+                    <td>
+                      <span class="btn-shape fs-13 fw-bold bg-green w-fit  c-white"> Done (kinda)  </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Dark Mode Strikes Back	</td>
+                    <td> 22/10/2025</td>
+                    <td>	CEO with Night Vision	</td>
+                    <td>	$420		</td>
+                    <td>
+                      <span class="btn-shape fs-13 fw-bold bg-green w-fit  c-white">Shipped + Sleek  </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Carousel of Regret</td>
+                    <td> 01/12/2025</td>
+                    <td>	Marketing (of course)</td>
+                    <td>	$$600		</td>
+                    <td>
+                      <span class="btn-shape fs-13 fw-bold bg-red w-fit  c-white">Still Spinning  </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>404 Page with Sass</td>
+                    <td> 1/02/2026</td>
+                    <td>	Me, Myself & I	</td>
+                    <td>	Free therapy		</td>
+                    <td>
+                      <span class="btn-shape fs-13 fw-bold bg-green w-fit   c-white">Iconic </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Form Validation Hell	</td>
+                    <td> 01/01/2027</td>
+                    <td>	Legal Dept 	</td>
+                    <td>	$180			</td>
+                    <td>
+                      <span class="btn-shape fs-13 fw-bold bg-orange w-fit  c-white">In Testing... Maybe </span>
+                    </td>
+                  </tr>
+                </tbody>
+                
+              </table>
+            </div>
+          </div>
+          <!-- end projects table  -->
+<script src="js/scrollToTop.js"></script>
+
+  </body>
+</html>

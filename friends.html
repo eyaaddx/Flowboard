@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework-eyad.css" />
+
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="imgs/fav-icon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="scrollToTopBtn" title="Go to top">^</button>
+    <div class="page flex">
+      <!-- side bar -->
+      <div class="side-bar p-relative p-20">
+        <h2 class="p-relative txt-c mt-0">Flow</h2>
+        <div class="sb-1">
+          <ul>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="index.html"
+              >
+                <i class="fa-solid fa-chart-bar fa-fw"></i>
+                <span class="hide-mobile">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span class="hide-mobile">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i>
+                <span class="hide-mobile">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-list-check fa-fw"></i>
+                <span class="hide-mobile">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-user-graduate fa-fw"></i>
+                <span class="hide-mobile">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="active flex align-center fs-15 c-black rad-6 p-10"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-users fa-fw"></i>
+                <span class="hide-mobile">Friends</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="files.html"
+              >
+                <i class="fa-solid fa-copy fa-fw"></i>
+                <span class="hide-mobile">Files</span>
+              </a>
+            </li>
+            <li class="last-sb">
+              <a
+                class="flex align-center fs-15 c-black rad-6 p-10"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-money-check-dollar fa-fw"></i>
+                <span class="hide-mobile">Plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sb-2 p">
+          <ul>
+            <li>
+              <a
+                class="user-signed active flex align-center fs-15 c-black rad-6 p-10"
+                href="profile.html"
+              >
+                <img src="imgs/eyad.png" alt="" />
+                <span class="user-name fw-bold">Eyad Mohamed </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end side bar -->
+
+      <!-- content -->
+
+      <div class="content w-full">
+        <!-- head -->
+        <div class="head p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons flex align-center">
+            <span class="notification p-relative"
+              ><i class="fa-solid fa-bell fa-lg"></i
+            ></span>
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <!--  end head -->
+        <h1 class="page-heading tracking-in-expand p-relative">Friends</h1>
+        <div class="friends-page grid m-20 gap-20">
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend p-relative rad-10 p-20 bg-accent">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="friend-avatar mb-10 mt-10 w-100 h-100 rad-half"
+                src="imgs/beer Friend.png"
+                alt=""
+              />
+              <h4 class="m-0">Bruno Codepaw</h4>
+              <p class="job mt-5 txt-accent fs-14">Full-Stack Bearveloper</p>
+            </div>
+            <div class="icons fs-14 p-relative">
+              <div class="mb-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>1 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-paperclip fa-fw"></i>
+                <span>+999 Projects</span>
+              </div>
+              <div class="mb-0">
+                <i class="fa-regular fa-dollar-sign fa-fw"></i>
+                <span>2M</span>
+              </div>
+            </div>
+            <div class="info fs-13 between-flex">
+              <span class="txt-accent">Joined 01/01/2000</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape" href="#">BreakUp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <script src="js/scrollToTop.js"></script>
+  </body>
+</html>
